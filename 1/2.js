@@ -57,7 +57,6 @@ class Manager {
   }
 
   newOrder(client, ...order) {
-
     const dishes = new Map();
     dishes.set("Маргарита", 'Пицца');
     dishes.set("Пепперони", 'Пицца');
@@ -79,17 +78,16 @@ class Manager {
       if (!dishes.has(value.name)) {
        return console.log(`${value.type} "${value.name}" - такого блюда не существует.`);  // Выходим из функции с ошибкой
       }
-    };
+    }
 
     console.log(`Клиент ${client.firstname} заказал:`)
 
     for (const value of order) {
-
         Client.clientInfo(client, dishes, cheifs, value, data); // Идем к клиенту проверять прошлые заказы
 
     }
   }
-};
+}
 
 // Можно передать внутрь конструктора что-либо, если необходимо.
 const manager = new Manager(data);

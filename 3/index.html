@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Добавить отзыв</title>
+</head>
+
+<body>
+
+    <form class="form">
+        <label>Оставьте отзыв</label><br>
+
+        <label for="name">Товар</label>
+        <input type="text" name="name" class="form__name">
+
+        <label for="text">Отзыв</label>
+        <textarea name="text" class="form__text"></textarea>
+
+        <button type="submit" class="submit">
+            Добавить отзыв
+        </button>
+    </form>
+    <br>
+    <a href="./2/2.html" class="next">Следующая страница</a>
+    <br>
+    <div class="products"></div>
+
+
+    <template class="temp">
+        <div class="product">
+            <h3 class="product__name">"Товар"</h3>
+            <p class="product__text">Отзыв...</p>
+        </div>
+    </template>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
